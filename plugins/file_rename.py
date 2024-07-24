@@ -35,7 +35,7 @@ async def rename_start(client, message):
         extension_type = mime_type.split('/')[1]
         if not Config.STRING_SESSION:
             if rkn_file.file_size > 2000 * 1024 * 1024:
-                 return await message.reply_text("Sᴏʀʀy Bʀᴏ Tʜɪꜱ Bᴏᴛ Iꜱ Dᴏᴇꜱɴ'ᴛ Sᴜᴩᴩᴏʀᴛ Uᴩʟᴏᴀᴅɪɴɢ Fɪʟᴇꜱ Bɪɢɢᴇʀ Tʜᴀɴ 2Gʙ+")
+                 return await message.reply_text("Sorry Bro to Rename 2GB+ file You Have Telegram Premium And After You Have telegram Preminum then Contact To Admin @oo7jatji")
 
         try:
             await message.reply_text(
@@ -108,7 +108,7 @@ async def doc(bot, update):
         suffix = await db.get_suffix(user_id)
         new_filename = add_prefix_suffix(new_filename_, prefix, suffix)
     except Exception as e:
-        return await update.message.edit(f"⚠️ Something went wrong can't able to set Prefix or Suffix ☹️ \n\n❄️ Contact My Creator -> @RknDeveloperr\nError: {e}")
+        return await update.message.edit(f"⚠️ Something went wrong can't able to set Prefix or Suffix ☹️ \n\n❄️ Contact To Admin -> @oo7jatji\nError: {e}")
 
     # msg file location 
     file = update.message.reply_to_message
